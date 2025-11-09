@@ -16,14 +16,14 @@ Pas de format strict, mais quelques suggestions pour rester organisé :
 
 Tu peux utiliser ces préfixes si tu veux, mais ce n'est **pas obligatoire** :
 
-| Préfixe | Usage | Exemple |
-|---------|-------|---------|
-| `[ADD]` | Ajout de contenu | `[ADD] Page about avec équipe` |
-| `[UPDATE]` | Mise à jour | `[UPDATE] Texte homepage` |
-| `[FIX]` | Correction | `[FIX] Lien cassé dans navigation` |
-| `[STYLE]` | Design/CSS | `[STYLE] Amélioration responsive mobile` |
-| `[REFACTOR]` | Réorganisation | `[REFACTOR] Structure des assets` |
-| `[REMOVE]` | Suppression | `[REMOVE] Anciennes images inutilisées` |
+| Préfixe      | Usage            | Exemple                                  |
+| ------------ | ---------------- | ---------------------------------------- |
+| `[ADD]`      | Ajout de contenu | `[ADD] Page about avec équipe`           |
+| `[UPDATE]`   | Mise à jour      | `[UPDATE] Texte homepage`                |
+| `[FIX]`      | Correction       | `[FIX] Lien cassé dans navigation`       |
+| `[STYLE]`    | Design/CSS       | `[STYLE] Amélioration responsive mobile` |
+| `[REFACTOR]` | Réorganisation   | `[REFACTOR] Structure des assets`        |
+| `[REMOVE]`   | Suppression      | `[REMOVE] Anciennes images inutilisées`  |
 
 ## 🎨 Exemples valides
 
@@ -100,6 +100,7 @@ Correction des liens cassés
 ## 🌍 Langue
 
 **Les deux sont acceptées :**
+
 - 🇫🇷 Français (si tu es plus à l'aise)
 - 🇬🇧 Anglais (standard international)
 
@@ -143,6 +144,7 @@ Le but est de pouvoir **retrouver facilement** ce qui a été fait dans l'histor
 ---
 
 **🎯 Résumé rapide :**
+
 - Pas de format strict obligatoire
 - Descriptions claires et compréhensibles
 - Français ou anglais, au choix
