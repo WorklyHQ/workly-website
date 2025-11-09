@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Workly : Votre compagnon virtuel intelligent sur votre bureau Windows. Avatar VRM interactif avec IA conversationnelle.">
+    <meta name="keywords" content="Workly, Avatar VRM, IA conversationnelle, assistant virtuel, Unity, Python">
+    <meta name="author" content="Xyon15">
+    <title>Workly | Votre Compagnon Virtuel Intelligent</title>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Favicon (optionnel - à ajouter plus tard) -->
+    <!-- <link rel="icon" type="image/png" href="assets/images/favicon.png"> -->
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Workly</a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="pages/about.html">À propos</a></li>
+                <li><a href="pages/terms.html">CGU</a></li>
+                <li><a href="pages/privacy.html">Confidentialité</a></li>
+            </ul>
+            
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Workly</h1>
+            <p class="subtitle">Votre Compagnon Virtuel Intelligent</p>
+            <p class="description">
+                Workly est un compagnon virtuel révolutionnaire qui transforme votre bureau Windows en un espace interactif. 
+                Avec un avatar VRM personnalisable et une IA conversationnelle avancée, 
+                Workly devient votre assistant personnel capable de parler, réagir émotionnellement et se déplacer librement.
+            </p>
+            <div class="btn-group">
+                <a href="pages/about.html" class="btn btn-primary">Découvrir le projet</a>
+                <a href="pages/terms.html" class="btn btn-secondary">CGU & Confidentialité</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Fonctionnalités Principales</h2>
+            
+            <div class="features-grid">
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Avatar VRM Personnalisable</h3>
+                    <p>Utilisez n'importe quel modèle VRM pour personnaliser votre compagnon virtuel</p>
+                </div>
+                
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">🤖</div>
+                    <h3>IA Conversationnelle</h3>
+                    <p>Chatbot intelligent basé sur des modèles de langage avancés</p>
+                </div>
+                
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">😊</div>
+                    <h3>Expressions Faciales</h3>
+                    <p>Réactions émotionnelles authentiques grâce aux blendshapes VRM</p>
+                </div>
+                
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">🎤</div>
+                    <h3>Synthèse Vocale</h3>
+                    <p>Workly peut parler avec vous grâce au text-to-speech</p>
+                </div>
+                
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">🎭</div>
+                    <h3>Animations Fluides</h3>
+                    <p>Mouvements naturels et transitions d'expressions smooth</p>
+                </div>
+                
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">🔧</div>
+                    <h3>Architecture Hybride</h3>
+                    <p>Unity pour le rendu 3D + Python pour l'interface et l'IA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECH STACK SECTION -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Technologies Utilisées</h2>
+            
+            <div class="cards-grid">
+                <div class="card fade-in">
+                    <div class="card-icon">🐍</div>
+                    <h3>Python</h3>
+                    <p><strong>PySide6/Qt</strong> pour l'interface graphique, <strong>Socket TCP</strong> pour la communication IPC, 
+                    <strong>sounddevice</strong> pour le traitement audio, et <strong>pytest</strong> pour les tests.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon">🎮</div>
+                    <h3>Unity 2022.3 LTS</h3>
+                    <p><strong>Universal Render Pipeline (URP)</strong> pour un rendu optimisé, 
+                    <strong>UniVRM</strong> pour le support des modèles VRM, scripts C# pour le contrôle de l'avatar.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon">🔗</div>
+                    <h3>Architecture IPC</h3>
+                    <p>Communication bidirectionnelle via <strong>Socket TCP</strong> (port 5555) avec messages JSON. 
+                    Thread-safety Unity grâce au pattern Queue + Update.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="section" style="text-align: center; padding: 5rem 2rem;">
+        <div class="container">
+            <h2 class="section-title fade-in">Prêt à découvrir Workly ?</h2>
+            <p class="fade-in" style="color: var(--text-secondary); font-size: 1.2rem; margin-bottom: 2rem;">
+                Explorez la documentation complète du projet
+            </p>
+            <div class="btn-group fade-in">
+                <a href="pages/about.html" class="btn btn-primary">En savoir plus</a>
+                <a href="pages/terms.html" class="btn btn-secondary">Mentions légales</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Accueil</a>
+                <a href="pages/about.html">À propos</a>
+                <a href="pages/terms.html">Conditions d'utilisation</a>
+                <a href="pages/privacy.html">Politique de confidentialité</a>
+            </div>
+            <p>&copy; 2025 Workly. Développé avec 💜 par Xyon15</p>
+            <p style="margin-top: 0.5rem; font-size: 0.8rem;">Code source disponible (MIT-NC) | Unity + Python</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Documentation API et Endpoints Discord pour Workly">
+    <title>API Endpoints | Workly</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">🎭 Workly</a>
+            
+            <ul class="nav-links">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="api.html">API Endpoints</a></li>
+                <li><a href="terms.html">CGU</a></li>
+                <li><a href="privacy.html">Confidentialité</a></li>
+            </ul>
+            
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <section class="hero" style="min-height: 50vh;">
+        <div class="hero-content">
+            <h1>API Endpoints</h1>
+            <p class="subtitle">Configuration Discord et URLs officielles</p>
+        </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="section">
+        <div class="container">
+            <!-- INTRODUCTION -->
+            <div class="card fade-in" style="margin-bottom: 3rem;">
+                <h2 style="color: var(--primary-light); margin-bottom: 1rem;">📡 Configuration des Endpoints</h2>
+                <p style="color: var(--text-secondary); line-height: 1.8;">
+                    Cette page répertorie tous les endpoints API et URLs de configuration pour l'application Discord de Workly. 
+                    Ces URLs sont utilisées pour configurer les interactions, les rôles liés, et les politiques légales.
+                </p>
+            </div>
+
+            <!-- INTERACTIONS ENDPOINT -->
+            <div class="endpoint-card fade-in">
+                <h3>🔗 Interactions Endpoint URL</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                    Vous pouvez optionnellement configurer un endpoint d'interactions pour recevoir les interactions 
+                    via HTTP POST plutôt que via Gateway avec un bot user.
+                </p>
+                <div class="url">https://nice-example.local/api/interactions</div>
+                <p style="color: var(--text-secondary); margin-top: 1rem;">
+                    <strong>Usage :</strong> Cet endpoint permet à Discord d'envoyer les commandes slash, 
+                    les clics de boutons et autres interactions directement à votre serveur via webhook.
+                </p>
+            </div>
+
+            <!-- LINKED ROLES -->
+            <div class="endpoint-card fade-in">
+                <h3>🔐 Linked Roles Verification URL</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                    Vous pouvez configurer une URL de vérification pour activer votre application comme 
+                    condition requise dans les paramètres de rôles liés d'un serveur.
+                </p>
+                <div class="url">https://nice-example.local/verify-user</div>
+                <p style="color: var(--text-secondary); margin-top: 1rem;">
+                    <strong>Usage :</strong> Cette URL permet aux utilisateurs de connecter leur compte Discord 
+                    à votre application pour débloquer des rôles spéciaux basés sur des critères externes 
+                    (niveau de jeu, abonnement, etc.).
+                </p>
+            </div>
+
+            <!-- TERMS OF SERVICE -->
+            <div class="endpoint-card fade-in">
+                <h3>📄 Terms of Service URL</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                    Un lien vers les Conditions d'Utilisation de votre application.
+                </p>
+                <div class="url">https://my-cool-app.com/terms-of-service</div>
+                <p style="color: var(--text-secondary); margin-top: 1rem;">
+                    <strong>Note :</strong> Cette URL doit pointer vers vos CGU officielles. 
+                    Pour Workly, consultez notre page <a href="terms.html" style="color: var(--primary-color);">Conditions d'Utilisation</a>.
+                </p>
+            </div>
+
+            <!-- PRIVACY POLICY -->
+            <div class="endpoint-card fade-in">
+                <h3>🔒 Privacy Policy URL</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                    Un lien vers la Politique de Confidentialité de votre application.
+                </p>
+                <div class="url">https://my-cool-app.com/privacy-policy</div>
+                <p style="color: var(--text-secondary); margin-top: 1rem;">
+                    <strong>Note :</strong> Cette URL doit pointer vers votre politique de confidentialité officielle. 
+                    Pour Workly, consultez notre page <a href="privacy.html" style="color: var(--primary-color);">Politique de Confidentialité</a>.
+                </p>
+            </div>
+
+            <!-- DOCUMENTATION TECHNIQUE -->
+            <h2 class="section-title fade-in" style="margin-top: 4rem;">Documentation Technique</h2>
+            
+            <div class="cards-grid">
+                <div class="card fade-in">
+                    <div class="card-icon">🔧</div>
+                    <h3>Configuration Discord</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">
+                        Pour configurer ces endpoints dans votre application Discord :
+                    </p>
+                    <ol style="color: var(--text-secondary); margin-left: 1.5rem; margin-top: 1rem; line-height: 1.8;">
+                        <li>Accédez au <strong>Discord Developer Portal</strong></li>
+                        <li>Sélectionnez votre application</li>
+                        <li>Naviguez vers <strong>General Information</strong></li>
+                        <li>Remplissez les champs correspondants</li>
+                        <li>Sauvegardez les modifications</li>
+                    </ol>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-icon">🛡️</div>
+                    <h3>Sécurité</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">
+                        Points importants pour la sécurité :
+                    </p>
+                    <ul style="color: var(--text-secondary); margin-left: 1.5rem; margin-top: 1rem; line-height: 1.8;">
+                        <li>✅ Utilisez <strong>HTTPS uniquement</strong></li>
+                        <li>✅ Validez les signatures Discord</li>
+                        <li>✅ Implémentez le rate limiting</li>
+                        <li>✅ Ne stockez jamais de tokens côté client</li>
+                        <li>✅ Suivez les bonnes pratiques OWASP</li>
+                    </ul>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-icon">📚</div>
+                    <h3>Ressources Utiles</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">
+                        Documentation officielle Discord :
+                    </p>
+                    <ul style="color: var(--text-secondary); margin-left: 1.5rem; margin-top: 1rem; line-height: 1.8;">
+                        <li><a href="https://discord.com/developers/docs" target="_blank" style="color: var(--primary-color);">Discord Developer Docs</a></li>
+                        <li><a href="https://discord.com/developers/docs/interactions/receiving-and-responding" target="_blank" style="color: var(--primary-color);">Interactions API</a></li>
+                        <li><a href="https://discord.com/developers/docs/tutorials/configuring-app-metadata-for-linked-roles" target="_blank" style="color: var(--primary-color);">Linked Roles Guide</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- NOTE IMPORTANTE -->
+            <div class="card fade-in" style="margin-top: 3rem; border-left: 4px solid var(--accent);">
+                <h3 style="color: var(--accent); margin-bottom: 1rem;">⚠️ Note Importante</h3>
+                <p style="color: var(--text-secondary); line-height: 1.8;">
+                    Les URLs présentées ci-dessus sont des <strong>exemples de configuration</strong>. 
+                    Dans un environnement de production, ces URLs doivent pointer vers des serveurs réels 
+                    avec une infrastructure sécurisée et scalable.
+                </p>
+                <p style="color: var(--text-secondary); line-height: 1.8; margin-top: 1rem;">
+                    Pour le projet Workly, ces endpoints seront configurés et hébergés sur 
+                    <strong>Elsites</strong> avec les certificats SSL appropriés.
+                </p>
+            </div>
+
+            <!-- SUPPORT -->
+            <div class="card fade-in" style="margin-top: 2rem; text-align: center;">
+                <h3 style="color: var(--primary-light); margin-bottom: 1rem;">💬 Besoin d'aide ?</h3>
+                <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 2rem;">
+                    Si vous avez des questions sur la configuration des endpoints ou l'intégration Discord, 
+                    n'hésitez pas à consulter notre documentation complète.
+                </p>
+                <a href="about.html" class="btn btn-primary">En savoir plus sur Workly</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="../index.html">Accueil</a>
+                <a href="about.html">À propos</a>
+                <a href="api.html">API</a>
+                <a href="terms.html">Conditions d'utilisation</a>
+                <a href="privacy.html">Politique de confidentialité</a>
+            </div>
+            <p>&copy; 2025 Workly. Développé avec 💜 par Xyon15</p>
+            <p style="margin-top: 0.5rem; font-size: 0.8rem;">Code source disponible (MIT-NC) | Unity + Python</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
