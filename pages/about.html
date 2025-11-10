@@ -1,238 +1,394 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="À propos de Workly - Découvrez l'histoire, les fonctionnalités et l'architecture technique du projet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="À propos de Workly - Découvrez l'histoire, les fonctionnalités et l'architecture technique du projet"
+    />
     <title>À propos | Workly</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
     <!-- NAVIGATION -->
     <nav class="navbar">
-        <div class="container">
-            <a href="../index.html" class="logo">Workly</a>
-            
-            <ul class="nav-links">
-                <li><a href="../index.html">Accueil</a></li>
-                <li><a href="about.html">À propos</a></li>
-                <li><a href="terms.html">CGU</a></li>
-                <li><a href="privacy.html">Confidentialité</a></li>
-            </ul>
-            
-            <div class="mobile-menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+      <div class="container">
+        <a href="../index.html" class="logo">Workly</a>
+
+        <ul class="nav-links">
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="terms.html">CGU</a></li>
+          <li><a href="privacy.html">Confidentialité</a></li>
+        </ul>
+
+        <div class="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+      </div>
     </nav>
 
     <!-- HEADER -->
-    <section class="hero" style="min-height: 50vh;">
-        <div class="hero-content">
-            <h1>À propos de Workly</h1>
-            <p class="subtitle">L'histoire et la vision du projet</p>
-        </div>
+    <section class="hero" style="min-height: 50vh">
+      <div class="hero-content">
+        <h1>À propos de Workly</h1>
+        <p class="subtitle">L'histoire et la vision du projet</p>
+      </div>
     </section>
 
     <!-- CONTENT -->
     <section class="section">
-        <div class="container">
-            <!-- INTRODUCTION -->
-            <div class="card fade-in" style="margin-bottom: 3rem;">
-                <h2 style="color: var(--primary-light); margin-bottom: 1rem;">Qu'est-ce que Workly ?</h2>
-                <p style="color: var(--text-secondary); line-height: 1.8;">
-                    <strong>Workly</strong> est une application hybride révolutionnaire 
-                    qui combine Unity et Python pour créer un compagnon virtuel interactif sur votre bureau Windows.
-                </p>
-                <p style="color: var(--text-secondary); line-height: 1.8; margin-top: 1rem;">
-                    Inspiré par les applications de "Desktop Pet" modernes, Workly va bien au-delà en intégrant 
-                    une véritable intelligence artificielle conversationnelle, des expressions faciales réalistes, 
-                    et la liberté de personnaliser entièrement votre avatar avec les modèles VRM.
-                </p>
-            </div>
-
-            <!-- VISION -->
-            <div class="card fade-in" style="margin-bottom: 3rem;">
-                <h2 style="color: var(--primary-light); margin-bottom: 1rem;">🚀 Vision du Projet</h2>
-                <p style="color: var(--text-secondary); line-height: 1.8;">
-                    L'objectif de Workly est de créer un <strong>assistant virtuel personnalisable</strong> qui peut :
-                </p>
-                <ul style="color: var(--text-secondary); margin-left: 2rem; margin-top: 1rem; line-height: 2;">
-                    <li>✅ <strong>Afficher un avatar VRM</strong> de votre choix sur votre bureau</li>
-                    <li>✅ <strong>Converser intelligemment</strong> grâce à des modèles d'IA avancés</li>
-                    <li>✅ <strong>Exprimer des émotions</strong> avec des expressions faciales réalistes</li>
-                    <li>✅ <strong>Parler avec vous</strong> via synthèse vocale (Text-to-Speech)</li>
-                    <li>✅ <strong>Se déplacer librement</strong> sur votre écran de manière naturelle</li>
-                    <li>✅ <strong>Réagir à vos interactions</strong> de façon contextuelle et personnalisée</li>
-                </ul>
-            </div>
-
-            <!-- TECHNOLOGIES -->
-            <h2 class="section-title fade-in">Architecture Technique</h2>
-            
-            <div class="cards-grid">
-                <div class="card fade-in">
-                    <div class="card-icon">🐍</div>
-                    <h3>Python (Interface & Logique)</h3>
-                    <ul style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.8;">
-                        <li><strong>PySide6/Qt</strong> → Interface graphique</li>
-                        <li><strong>Socket TCP</strong> → Communication IPC</li>
-                        <li><strong>sounddevice, numpy</strong> → Traitement audio</li>
-                        <li><strong>pytest</strong> → Tests unitaires</li>
-                        <li><strong>LLM local</strong> → Intelligence artificielle</li>
-                    </ul>
-                </div>
-
-                <div class="card fade-in">
-                    <div class="card-icon">🎮</div>
-                    <h3>Unity (Rendu 3D)</h3>
-                    <ul style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.8;">
-                        <li><strong>Unity 2022.3 LTS</strong> (URP)</li>
-                        <li><strong>UniVRM</strong> → Support modèles VRM</li>
-                        <li><strong>C# Scripts</strong> → PythonBridge, VRMLoader</li>
-                        <li><strong>Blendshapes</strong> → Expressions faciales</li>
-                        <li><strong>Transparent Window</strong> → Intégration desktop</li>
-                    </ul>
-                </div>
-
-                <div class="card fade-in">
-                    <div class="card-icon">🔗</div>
-                    <h3>Communication IPC</h3>
-                    <ul style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.8;">
-                        <li><strong>Socket TCP</strong> (port 5555)</li>
-                        <li><strong>Messages JSON</strong> bidirectionnels</li>
-                        <li><strong>Thread-safety Unity</strong> (Queue + Update pattern)</li>
-                        <li><strong>Protocole extensible</strong> pour nouvelles features</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- PHASES DE DÉVELOPPEMENT -->
-            <h2 class="section-title fade-in" style="margin-top: 5rem;">Phases de Développement</h2>
-            
-            <div class="endpoint-card fade-in">
-                <h3>✅ Phase 1 : MVP (Minimum Viable Product)</h3>
-                <p><strong>Statut :</strong> <span style="color: var(--success);">TERMINÉ</span></p>
-                <ul style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.8;">
-                    <li>Affichage de l'avatar VRM sur le bureau</li>
-                    <li>Chargement dynamique de modèles VRM</li>
-                    <li>Interface Python fonctionnelle (PySide6/Qt)</li>
-                    <li>Communication Unity ↔ Python via Socket TCP (port 5555)</li>
-                    <li>Thread-safety résolu (Queue + Update pattern)</li>
-                </ul>
-            </div>
-
-            <div class="endpoint-card fade-in">
-                <h3>✅ Phase 2 : Expressions & Animations</h3>
-                <p><strong>Statut :</strong> <span style="color: var(--success);">TERMINÉ</span></p>
-                <ul style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.8;">
-                    <li>Contrôle des blendshapes VRM (5 expressions)</li>
-                    <li>Transitions fluides avec interpolation Lerp</li>
-                    <li>Clignement automatique des yeux (SmoothStep, 160ms)</li>
-                    <li>Mouvements de tête naturels (Yaw/Pitch, 3-10s)</li>
-                    <li>Interface 3 onglets (Expressions, Animations, Options)</li>
-                </ul>
-            </div>
-
-            <div class="endpoint-card fade-in">
-                <h3>✅ Phase 3 : IA Conversationnelle</h3>
-                <p><strong>Statut :</strong> <span style="color: var(--success);">TERMINÉ</span></p>
-                <ul style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.8;">
-                    <li>Chatbot intelligent avec LLM Zephyr-7B (local)</li>
-                    <li>Analyse émotionnelle des messages (6 émotions)</li>
-                    <li>Réactions faciales contextuelles automatiques</li>
-                    <li>Mémoire conversationnelle (SQLite)</li>
-                    <li>Bot Discord intégré avec contrôle GUI</li>
-                    <li>GPU CUDA activé (25-35 tok/s, 5.4GB VRAM)</li>
-                </ul>
-            </div>
-
-            <div class="endpoint-card fade-in">
-                <h3>✅ Phase 4 : Optimisations Performance</h3>
-                <p><strong>Statut :</strong> <span style="color: var(--success);">TERMINÉ</span></p>
-                <ul style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.8;">
-                    <li>Memory profiling (pas de leaks détectés)</li>
-                    <li>LLM cache optimization (-17% latence première génération)</li>
-                    <li>Unity IPC batching (-79% latence, +907% throughput)</li>
-                    <li>Vitesse génération : 5-7x plus rapide (25-35 tok/s)</li>
-                    <li>270/270 tests passent (100%)</li>
-                </ul>
-            </div>
-
-            <div class="endpoint-card fade-in">
-                <h3>🔜 Phase 5 : Audio & Lip-Sync</h3>
-                <p><strong>Statut :</strong> <span style="color: var(--text-secondary);">PLANIFIÉ</span></p>
-                <ul style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.8;">
-                    <li>Text-to-Speech (TTS) intégré</li>
-                    <li>Synchronisation labiale automatique</li>
-                    <li>Analyse phonétique pour bouche réaliste (A, I, U, E, O)</li>
-                    <li>Support de plusieurs voix</li>
-                </ul>
-            </div>
-
-            <div class="endpoint-card fade-in">
-                <h3>🔜 Phase 6 : Interactions Avancées</h3>
-                <p><strong>Statut :</strong> <span style="color: var(--text-secondary);">PLANIFIÉ</span></p>
-                <ul style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.8;">
-                    <li>Avatar suit le curseur de la souris</li>
-                    <li>Réaction aux clics utilisateur</li>
-                    <li>Drag & drop sur le bureau</li>
-                    <li>Déplacement autonome sur l'écran</li>
-                </ul>
-            </div>
-
-            <!-- INSPIRATION -->
-            <div class="card fade-in" style="margin-top: 3rem;">
-                <h2 style="color: var(--primary-light); margin-bottom: 1rem;">💡 Inspiration</h2>
-                <p style="color: var(--text-secondary); line-height: 1.8;">
-                    Kira s'inspire du concept de <a href="https://store.steampowered.com/app/3301060/Desktop_Mate/" 
-                    target="_blank" style="color: var(--primary-color);">Desktop Mate sur Steam</a>, 
-                    mais avec une vision plus ambitieuse :
-                </p>
-                <ul style="color: var(--text-secondary); margin-left: 2rem; margin-top: 1rem; line-height: 2;">
-                    <li>✅ <strong>Personnalisation totale</strong> avec vos propres modèles VRM</li>
-                    <li>🤖 <strong>Intelligence artificielle réelle</strong> (pas de réponses scriptées)</li>
-                    <li>🛠️ <strong>Code source disponible</strong> (licence MIT-NC)</li>
-                    <li>🔧 <strong>Extensible</strong> et modulaire par design</li>
-                </ul>
-            </div>
-
-            <!-- CODE SOURCE DISPONIBLE -->
-            <div class="card fade-in" style="margin-top: 2rem;">
-                <h2 style="color: var(--primary-light); margin-bottom: 1rem;">📖 Code Source Disponible</h2>
-                <p style="color: var(--text-secondary); line-height: 1.8;">
-                    Workly est développé avec passion et le code source est <strong>disponible publiquement</strong> 
-                    sur GitHub sous <strong>licence MIT Non-Commerciale (MIT-NC)</strong>.
-                </p>
-                <p style="color: var(--text-secondary); line-height: 1.8; margin-top: 1rem;">
-                    <strong>Créateur :</strong> Xyon15<br>
-                    <strong>License :</strong> MIT Non-Commercial (MIT-NC)<br>
-                    <strong>Repository :</strong> GitHub (desktop-mate)<br>
-                    <strong>Usage :</strong> Personnel et non commercial uniquement
-                </p>
-                <p style="color: var(--text-secondary); line-height: 1.8; margin-top: 1rem;">
-                    ⚠️ <strong>Note :</strong> L'utilisation commerciale nécessite une autorisation écrite préalable.
-                </p>
-            </div>
+      <div class="container">
+        <!-- INTRODUCTION -->
+        <div class="card fade-in" style="margin-bottom: 3rem">
+          <h2 style="color: var(--primary-light); margin-bottom: 1rem">
+            Qu'est-ce que Workly ?
+          </h2>
+          <p style="color: var(--text-secondary); line-height: 1.8">
+            <strong>Workly</strong> est une application hybride révolutionnaire
+            qui combine Unity et Python pour créer un compagnon virtuel
+            interactif sur votre bureau Windows.
+          </p>
+          <p
+            style="
+              color: var(--text-secondary);
+              line-height: 1.8;
+              margin-top: 1rem;
+            "
+          >
+            Inspiré par les applications de "Desktop Pet" modernes, Workly va
+            bien au-delà en intégrant une véritable intelligence artificielle
+            conversationnelle, des expressions faciales réalistes, et la liberté
+            de personnaliser entièrement votre avatar avec les modèles VRM.
+          </p>
         </div>
+
+        <!-- VISION -->
+        <div class="card fade-in" style="margin-bottom: 3rem">
+          <h2 style="color: var(--primary-light); margin-bottom: 1rem">
+            🚀 Vision du Projet
+          </h2>
+          <p style="color: var(--text-secondary); line-height: 1.8">
+            L'objectif de Workly est de créer un
+            <strong>assistant virtuel personnalisable</strong> qui peut :
+          </p>
+          <ul
+            style="
+              color: var(--text-secondary);
+              margin-left: 2rem;
+              margin-top: 1rem;
+              line-height: 2;
+            "
+          >
+            <li>
+              ✅ <strong>Afficher un avatar VRM</strong> de votre choix sur
+              votre bureau
+            </li>
+            <li>
+              ✅ <strong>Converser intelligemment</strong> grâce à des modèles
+              d'IA avancés
+            </li>
+            <li>
+              ✅ <strong>Exprimer des émotions</strong> avec des expressions
+              faciales réalistes
+            </li>
+            <li>
+              ✅ <strong>Parler avec vous</strong> via synthèse vocale
+              (Text-to-Speech)
+            </li>
+            <li>
+              ✅ <strong>Se déplacer librement</strong> sur votre écran de
+              manière naturelle
+            </li>
+            <li>
+              ✅ <strong>Réagir à vos interactions</strong> de façon
+              contextuelle et personnalisée
+            </li>
+          </ul>
+        </div>
+
+        <!-- TECHNOLOGIES -->
+        <h2 class="section-title fade-in">Architecture Technique</h2>
+
+        <div class="cards-grid">
+          <div class="card fade-in">
+            <div class="card-icon">🐍</div>
+            <h3>Python (Interface & Logique)</h3>
+            <ul
+              style="
+                color: var(--text-secondary);
+                margin-top: 1rem;
+                line-height: 1.8;
+              "
+            >
+              <li><strong>PySide6/Qt</strong> → Interface graphique</li>
+              <li><strong>Socket TCP</strong> → Communication IPC</li>
+              <li><strong>sounddevice, numpy</strong> → Traitement audio</li>
+              <li><strong>pytest</strong> → Tests unitaires</li>
+              <li><strong>LLM local</strong> → Intelligence artificielle</li>
+            </ul>
+          </div>
+
+          <div class="card fade-in">
+            <div class="card-icon">🎮</div>
+            <h3>Unity (Rendu 3D)</h3>
+            <ul
+              style="
+                color: var(--text-secondary);
+                margin-top: 1rem;
+                line-height: 1.8;
+              "
+            >
+              <li><strong>Unity 2022.3 LTS</strong> (URP)</li>
+              <li><strong>UniVRM</strong> → Support modèles VRM</li>
+              <li><strong>C# Scripts</strong> → PythonBridge, VRMLoader</li>
+              <li><strong>Blendshapes</strong> → Expressions faciales</li>
+              <li><strong>Transparent Window</strong> → Intégration desktop</li>
+            </ul>
+          </div>
+
+          <div class="card fade-in">
+            <div class="card-icon">🔗</div>
+            <h3>Communication IPC</h3>
+            <ul
+              style="
+                color: var(--text-secondary);
+                margin-top: 1rem;
+                line-height: 1.8;
+              "
+            >
+              <li><strong>Socket TCP</strong> (port 5555)</li>
+              <li><strong>Messages JSON</strong> bidirectionnels</li>
+              <li>
+                <strong>Thread-safety Unity</strong> (Queue + Update pattern)
+              </li>
+              <li>
+                <strong>Protocole extensible</strong> pour nouvelles features
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- PHASES DE DÉVELOPPEMENT -->
+        <h2 class="section-title fade-in" style="margin-top: 5rem">
+          Phases de Développement
+        </h2>
+
+        <div class="endpoint-card fade-in">
+          <h3>✅ Phase 1 : MVP (Minimum Viable Product)</h3>
+          <p>
+            <strong>Statut :</strong>
+            <span style="color: var(--success)">TERMINÉ</span>
+          </p>
+          <ul
+            style="
+              color: var(--text-secondary);
+              margin-top: 1rem;
+              line-height: 1.8;
+            "
+          >
+            <li>Affichage de l'avatar VRM sur le bureau</li>
+            <li>Chargement dynamique de modèles VRM</li>
+            <li>Interface Python fonctionnelle (PySide6/Qt)</li>
+            <li>Communication Unity ↔ Python via Socket TCP (port 5555)</li>
+            <li>Thread-safety résolu (Queue + Update pattern)</li>
+          </ul>
+        </div>
+
+        <div class="endpoint-card fade-in">
+          <h3>✅ Phase 2 : Expressions & Animations</h3>
+          <p>
+            <strong>Statut :</strong>
+            <span style="color: var(--success)">TERMINÉ</span>
+          </p>
+          <ul
+            style="
+              color: var(--text-secondary);
+              margin-top: 1rem;
+              line-height: 1.8;
+            "
+          >
+            <li>Contrôle des blendshapes VRM (5 expressions)</li>
+            <li>Transitions fluides avec interpolation Lerp</li>
+            <li>Clignement automatique des yeux (SmoothStep, 160ms)</li>
+            <li>Mouvements de tête naturels (Yaw/Pitch, 3-10s)</li>
+            <li>Interface 3 onglets (Expressions, Animations, Options)</li>
+          </ul>
+        </div>
+
+        <div class="endpoint-card fade-in">
+          <h3>✅ Phase 3 : IA Conversationnelle</h3>
+          <p>
+            <strong>Statut :</strong>
+            <span style="color: var(--success)">TERMINÉ</span>
+          </p>
+          <ul
+            style="
+              color: var(--text-secondary);
+              margin-top: 1rem;
+              line-height: 1.8;
+            "
+          >
+            <li>Chatbot intelligent avec LLM Zephyr-7B (local)</li>
+            <li>Analyse émotionnelle des messages (6 émotions)</li>
+            <li>Réactions faciales contextuelles automatiques</li>
+            <li>Mémoire conversationnelle (SQLite)</li>
+            <li>Bot Discord intégré avec contrôle GUI</li>
+            <li>GPU CUDA activé (25-35 tok/s, 5.4GB VRAM)</li>
+          </ul>
+        </div>
+
+        <div class="endpoint-card fade-in">
+          <h3>✅ Phase 4 : Optimisations Performance</h3>
+          <p>
+            <strong>Statut :</strong>
+            <span style="color: var(--success)">TERMINÉ</span>
+          </p>
+          <ul
+            style="
+              color: var(--text-secondary);
+              margin-top: 1rem;
+              line-height: 1.8;
+            "
+          >
+            <li>Memory profiling (pas de leaks détectés)</li>
+            <li>LLM cache optimization (-17% latence première génération)</li>
+            <li>Unity IPC batching (-79% latence, +907% throughput)</li>
+            <li>Vitesse génération : 5-7x plus rapide (25-35 tok/s)</li>
+            <li>270/270 tests passent (100%)</li>
+          </ul>
+        </div>
+
+        <div class="endpoint-card fade-in">
+          <h3>🔜 Phase 5 : Audio & Lip-Sync</h3>
+          <p>
+            <strong>Statut :</strong>
+            <span style="color: var(--text-secondary)">PLANIFIÉ</span>
+          </p>
+          <ul
+            style="
+              color: var(--text-secondary);
+              margin-top: 1rem;
+              line-height: 1.8;
+            "
+          >
+            <li>Text-to-Speech (TTS) intégré</li>
+            <li>Synchronisation labiale automatique</li>
+            <li>Analyse phonétique pour bouche réaliste (A, I, U, E, O)</li>
+            <li>Support de plusieurs voix</li>
+          </ul>
+        </div>
+
+        <div class="endpoint-card fade-in">
+          <h3>🔜 Phase 6 : Interactions Avancées</h3>
+          <p>
+            <strong>Statut :</strong>
+            <span style="color: var(--text-secondary)">PLANIFIÉ</span>
+          </p>
+          <ul
+            style="
+              color: var(--text-secondary);
+              margin-top: 1rem;
+              line-height: 1.8;
+            "
+          >
+            <li>Avatar suit le curseur de la souris</li>
+            <li>Réaction aux clics utilisateur</li>
+            <li>Drag & drop sur le bureau</li>
+            <li>Déplacement autonome sur l'écran</li>
+          </ul>
+        </div>
+
+        <!-- INSPIRATION -->
+        <div class="card fade-in" style="margin-top: 3rem">
+          <h2 style="color: var(--primary-light); margin-bottom: 1rem">
+            💡 Inspiration
+          </h2>
+          <p style="color: var(--text-secondary); line-height: 1.8">
+            Kira s'inspire du concept de
+            <a
+              href="https://store.steampowered.com/app/3301060/Desktop_Mate/"
+              target="_blank"
+              style="color: var(--primary-color)"
+              >Desktop Mate sur Steam</a
+            >, mais avec une vision plus ambitieuse :
+          </p>
+          <ul
+            style="
+              color: var(--text-secondary);
+              margin-left: 2rem;
+              margin-top: 1rem;
+              line-height: 2;
+            "
+          >
+            <li>
+              ✅ <strong>Personnalisation totale</strong> avec vos propres
+              modèles VRM
+            </li>
+            <li>
+              🤖 <strong>Intelligence artificielle réelle</strong> (pas de
+              réponses scriptées)
+            </li>
+            <li>🛠️ <strong>Code source disponible</strong> (licence MIT-NC)</li>
+            <li>🔧 <strong>Extensible</strong> et modulaire par design</li>
+          </ul>
+        </div>
+
+        <!-- CODE SOURCE DISPONIBLE -->
+        <div class="card fade-in" style="margin-top: 2rem">
+          <h2 style="color: var(--primary-light); margin-bottom: 1rem">
+            📖 Code Source Disponible
+          </h2>
+          <p style="color: var(--text-secondary); line-height: 1.8">
+            Workly est développé avec passion et le code source est
+            <strong>disponible publiquement</strong> sur GitHub sous
+            <strong>licence MIT Non-Commerciale (MIT-NC)</strong>.
+          </p>
+          <p
+            style="
+              color: var(--text-secondary);
+              line-height: 1.8;
+              margin-top: 1rem;
+            "
+          >
+            <strong>Créateur :</strong> Xyon15<br />
+            <strong>License :</strong> MIT Non-Commercial (MIT-NC)<br />
+            <strong>Repository :</strong> GitHub (workly-desktop)<br />
+            <strong>Usage :</strong> Personnel et non commercial uniquement
+          </p>
+          <p
+            style="
+              color: var(--text-secondary);
+              line-height: 1.8;
+              margin-top: 1rem;
+            "
+          >
+            ⚠️ <strong>Note :</strong> L'utilisation commerciale nécessite une
+            autorisation écrite préalable.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- FOOTER -->
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="../index.html">Accueil</a>
-                <a href="about.html">À propos</a>
-                <a href="terms.html">Conditions d'utilisation</a>
-                <a href="privacy.html">Politique de confidentialité</a>
-            </div>
-            <p>&copy; 2025 Workly. Développé avec 💜 par Xyon15</p>
-            <p style="margin-top: 0.5rem; font-size: 0.8rem;">Code source disponible (MIT-NC) | Unity + Python</p>
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="../index.html">Accueil</a>
+          <a href="about.html">À propos</a>
+          <a href="terms.html">Conditions d'utilisation</a>
+          <a href="privacy.html">Politique de confidentialité</a>
         </div>
+        <p>&copy; 2025 Workly. Développé avec 💜 par Xyon15</p>
+        <p style="margin-top: 0.5rem; font-size: 0.8rem">
+          Code source disponible (MIT-NC) | Unity + Python
+        </p>
+      </div>
     </footer>
 
     <script src="../assets/js/main.js"></script>
-</body>
+  </body>
 </html>

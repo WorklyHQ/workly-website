@@ -35,11 +35,13 @@ web/
 Pour visualiser le site localement, ouvrez simplement `index.html` dans votre navigateur :
 
 **Option 1 : Double-clic**
+
 ```
 Double-cliquez sur index.html
 ```
 
 **Option 2 : Serveur HTTP local (recommandé)**
+
 ```bash
 # Avec Python
 python -m http.server 8000
@@ -48,22 +50,26 @@ python -m http.server 8000
 ```
 
 **Option 3 : Live Server (VS Code)**
+
 - Installez l'extension "Live Server" dans VS Code
 - Clic droit sur `index.html` → "Open with Live Server"
 
 ### Déployer sur Elsites
 
 1. **Préparer les fichiers**
+
    - Compresser le dossier `web/` en ZIP (ou l'uploader tel quel)
    - S'assurer que tous les chemins sont relatifs (pas de chemins absolus)
 
 2. **Upload via FTP/SFTP**
+
    ```
    Connectez-vous à votre hébergeur Elsites
    Uploadez le contenu du dossier web/ dans le répertoire public_html/
    ```
 
 3. **Configuration DNS**
+
    - Pointez votre domaine vers l'IP de votre hébergeur
    - Configurez les enregistrements A/CNAME
 
@@ -74,18 +80,21 @@ python -m http.server 8000
 ## 📄 Pages Disponibles
 
 ### 🏠 Accueil (`index.html`)
+
 - Présentation générale de Workly
 - Fonctionnalités principales
 - Technologies utilisées
 - Call-to-action vers les autres pages
 
 ### ℹ️ À propos (`pages/about.html`)
+
 - Histoire et vision du projet
 - Architecture technique détaillée
 - Phases de développement
 - Inspiration et objectifs
 
 ### 🔗 API Endpoints (`pages/api.html`)
+
 - Interactions Endpoint URL
 - Linked Roles Verification URL
 - Terms of Service URL
@@ -93,12 +102,14 @@ python -m http.server 8000
 - Documentation technique Discord
 
 ### 📜 Conditions d'Utilisation (`pages/terms.html`)
+
 - CGU complètes
 - Licence MIT Non-Commerciale (MIT-NC)
 - Restrictions d'utilisation
 - Limitation de responsabilité
 
 ### 🔒 Politique de Confidentialité (`pages/privacy.html`)
+
 - Données collectées (locales uniquement)
 - Utilisation des données
 - Droits RGPD
@@ -112,10 +123,10 @@ python -m http.server 8000
 
 ```css
 :root {
-    --primary-color: #903f9e;      /* Violet principal */
-    --primary-dark: #6d2d77;       /* Violet foncé */
-    --primary-light: #b05baf;      /* Violet clair */
-    /* ... */
+  --primary-color: #903f9e; /* Violet principal */
+  --primary-dark: #6d2d77; /* Violet foncé */
+  --primary-light: #b05baf; /* Violet clair */
+  /* ... */
 }
 ```
 
@@ -124,12 +135,13 @@ python -m http.server 8000
 Placez vos images dans `assets/images/` et référencez-les ainsi :
 
 ```html
-<img src="assets/images/logo.png" alt="Kira Logo">
+<img src="assets/images/logo.png" alt="Kira Logo" />
 ```
 
 ### Modifier les animations
 
 Éditez `assets/js/main.js` pour ajuster :
+
 - Vitesse des animations au scroll
 - Effets de parallaxe
 - Comportement du menu mobile
@@ -174,6 +186,7 @@ Pour utiliser les URLs sur Discord Developer Portal :
 **Aucune dépendance externe !** 🎉
 
 Le site utilise uniquement :
+
 - HTML5 natif
 - CSS3 natif (avec variables CSS)
 - JavaScript vanilla (ES6+)
@@ -185,11 +198,13 @@ Pas besoin de npm, webpack, ou autres outils de build.
 Le site web fait partie du projet Workly, distribué sous **licence MIT Non-Commerciale (MIT-NC)**.
 
 **Usage autorisé :**
+
 - ✅ Usage personnel et non commercial
 - ✅ Modification pour usage personnel
 - ✅ Étude et audit du code
 
 **Usage interdit sans autorisation :**
+
 - ❌ Usage commercial
 - ❌ Vente ou monétisation
 - ❌ Utilisation professionnelle
@@ -229,29 +244,41 @@ Exemples à ajouter dans le `<head>` :
 
 ```html
 <!-- Open Graph -->
-<meta property="og:title" content="Kira - Desktop Mate">
-<meta property="og:description" content="Votre compagnon virtuel intelligent">
-<meta property="og:image" content="https://votre-domaine.com/assets/images/og-image.jpg">
-<meta property="og:url" content="https://votre-domaine.com">
+<meta property="og:title" content="Kira - Workly" />
+<meta property="og:description" content="Votre compagnon virtuel intelligent" />
+<meta
+  property="og:image"
+  content="https://votre-domaine.com/assets/images/og-image.jpg"
+/>
+<meta property="og:url" content="https://votre-domaine.com" />
 
 <!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Kira - Desktop Mate">
-<meta name="twitter:description" content="Votre compagnon virtuel intelligent">
-<meta name="twitter:image" content="https://votre-domaine.com/assets/images/twitter-card.jpg">
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Kira - Workly" />
+<meta
+  name="twitter:description"
+  content="Votre compagnon virtuel intelligent"
+/>
+<meta
+  name="twitter:image"
+  content="https://votre-domaine.com/assets/images/twitter-card.jpg"
+/>
 ```
 
 ## 🐛 Dépannage
 
 ### Le menu mobile ne fonctionne pas
+
 - Vérifiez que `main.js` est bien chargé
 - Ouvrez la console du navigateur (F12) pour voir les erreurs
 
 ### Les animations ne se déclenchent pas
+
 - Vérifiez que JavaScript est activé
 - Le navigateur doit supporter `IntersectionObserver` (tous navigateurs modernes)
 
 ### Les liens ne fonctionnent pas
+
 - Vérifiez les chemins relatifs (surtout dans les pages du dossier `pages/`)
 - Les liens vers CSS/JS doivent être `../assets/...` depuis `pages/`
 
@@ -264,8 +291,9 @@ Voir le fichier [LICENSE](../LICENSE) à la racine du projet pour les détails c
 ## 👤 Auteur
 
 **Xyon15**
+
 - GitHub : [@Xyon15](https://github.com/Xyon15)
-- Projet : [desktop-mate](https://github.com/Xyon15/desktop-mate)
+- Projet : [workly-desktop](https://github.com/WorklyHQ/workly-desktop)
 
 ---
 
