@@ -2,6 +2,8 @@
 
 Site web officiel de présentation du projet Workly.
 
+💬 **Rejoignez notre communauté** : [Discord Workly](https://discord.gg/3Cpyxg29B4)
+
 ## 📋 Structure du Site
 
 ```
